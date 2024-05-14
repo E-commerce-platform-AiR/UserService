@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\konra\\Documents\\Rozproszone projekt\\UserService\\UserService\\UserService\\UserService.csproj": {}
+    "C:\\Users\\konra\\Documents\\Rozproszone projekt\\UserService\\UserService\\UserService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\konra\\Documents\\Rozproszone projekt\\UserService\\UserService\\UserService\\UserService.csproj": {
+    "C:\\Users\\konra\\Documents\\Rozproszone projekt\\UserService\\UserService\\UserService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\konra\\Documents\\Rozproszone projekt\\UserService\\UserService\\UserService\\UserService.csproj",
+        "projectUniqueName": "C:\\Users\\konra\\Documents\\Rozproszone projekt\\UserService\\UserService\\UserService.csproj",
         "projectName": "UserService",
-        "projectPath": "C:\\Users\\konra\\Documents\\Rozproszone projekt\\UserService\\UserService\\UserService\\UserService.csproj",
+        "projectPath": "C:\\Users\\konra\\Documents\\Rozproszone projekt\\UserService\\UserService\\UserService.csproj",
         "packagesPath": "C:\\Users\\konra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\konra\\Documents\\Rozproszone projekt\\UserService\\UserService\\UserService\\obj\\",
+        "outputPath": "C:\\Users\\konra\\Documents\\Rozproszone projekt\\UserService\\UserService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\konra\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -89,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }

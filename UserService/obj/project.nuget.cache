@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8gEVhKHnsjSGmUlTo30LYfB0CuBtt8dSbKxTDRnMfLLm/qjhhezqEDqMkRtyqfrdg76y/VLvaSiA2Uq1k8tAFQ==",
+  "dgSpecHash": "qTKsSWOrl8Z2/1u3jHPR8C5LV1w/Xlfs8CSbqYiBbRpHHrw+B/7A00G5Sj4Fdo17k7BK1jMN/3C2abxurdNzYQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\konra\\Documents\\Rozproszone projekt\\UserService\\UserService\\UserService\\UserService.csproj",
+  "projectFilePath": "C:\\Users\\konra\\Documents\\Rozproszone projekt\\UserService\\UserService\\UserService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\konra\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\konra\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.19\\microsoft.aspnetcore.jsonpatch.7.0.19.nupkg.sha512",
