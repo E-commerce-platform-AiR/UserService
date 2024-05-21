@@ -78,7 +78,6 @@ public class Startup
         {
             endpoint.MapControllers();
             endpoint.MapRazorPages();
-            //endpoint.MapHub<some sub>("some pattern");
         });
     }
     

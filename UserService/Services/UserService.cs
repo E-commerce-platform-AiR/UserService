@@ -22,9 +22,9 @@ public class UserService : IUserService
 
         return newUser;
     }
-    public async Task<UserEntity> GetUser(string userName, string password)
+    public async Task<UserEntity> GetUser(string userEmail, string password)
     {
-        return await _userRepository.GetUser(userName, password);
+        return await _userRepository.GetUser(userEmail, password);
     }
 
     public async Task<UserEntity> GetUser(Guid userId)

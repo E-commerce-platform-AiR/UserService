@@ -31,11 +31,11 @@ public class UserRepository : IUserRepository
 
         return user;
     }
-    public async Task<UserEntity> GetUser(string userName, string password)
+    public async Task<UserEntity> GetUser(string userEmail, string password)
     {
-        if (userName == null) throw new ArgumentNullException(nameof(userName));
+        if (userEmail == null) throw new InvalidUserException();
         UserEntity? user = await _dbContext.Users
-            .Where(x => x.UserName.ToLower() == userName.ToLower() && x.Password == password)
+            .Where(x => x.Email.ToLower() == userEmail.ToLower() && x.Password == password)
             .SingleOrDefaultAsync();
 
         if (user == null)
