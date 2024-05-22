@@ -32,4 +32,22 @@
       <_ContentIncludedByDefault Remove="Views\_ViewStart.cshtml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <UpToDateCheckInput Remove="Pages\Index.cshtml" />
+      <UpToDateCheckInput Remove="Pages\Shared\ErrorPage.cshtml" />
+      <UpToDateCheckInput Remove="Pages\Shared\MainPage.cshtml" />
+      <UpToDateCheckInput Remove="Pages\_ValidationScriptsPartial.cshtml" />
+      <UpToDateCheckInput Remove="Views\Home\Index.cshtml" />
+      <UpToDateCheckInput Remove="Views\Home\Privacy.cshtml" />
+      <UpToDateCheckInput Remove="Views\Shared\Error.cshtml" />
+      <UpToDateCheckInput Remove="Views\Shared\_Layout.cshtml" />
+      <UpToDateCheckInput Remove="Views\Shared\_ValidationScriptsPartial.cshtml" />
+      <UpToDateCheckInput Remove="Views\_ViewImports.cshtml" />
+      <UpToDateCheckInput Remove="Views\_ViewStart.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Migrations\" />
+    </ItemGroup>
+
 </Project>

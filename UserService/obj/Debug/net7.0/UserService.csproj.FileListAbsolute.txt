@@ -90,9 +90,10 @@ C:\Users\konra\Documents\Rozproszone projekt\UserService\UserService\obj\Debug\n
 C:\Users\konra\Documents\Rozproszone projekt\UserService\UserService\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\konra\Documents\Rozproszone projekt\UserService\UserService\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\konra\Documents\Rozproszone projekt\UserService\UserService\obj\Debug\net7.0\scopedcss\bundle\UserService.styles.css
-C:\Users\konra\Documents\Rozproszone projekt\UserService\UserService\obj\Debug\net7.0\UserService.csproj.CopyComplete
 C:\Users\konra\Documents\Rozproszone projekt\UserService\UserService\obj\Debug\net7.0\UserService.dll
 C:\Users\konra\Documents\Rozproszone projekt\UserService\UserService\obj\Debug\net7.0\refint\UserService.dll
 C:\Users\konra\Documents\Rozproszone projekt\UserService\UserService\obj\Debug\net7.0\UserService.pdb
 C:\Users\konra\Documents\Rozproszone projekt\UserService\UserService\obj\Debug\net7.0\UserService.genruntimeconfig.cache
 C:\Users\konra\Documents\Rozproszone projekt\UserService\UserService\obj\Debug\net7.0\ref\UserService.dll
+C:\Users\konra\Documents\Rozproszone projekt\UserService\UserService\obj\Debug\net7.0\UserService.sourcelink.json
+C:\Users\konra\Documents\Rozproszone projekt\UserService\UserService\obj\Debug\net7.0\UserServ.57764DC8.Up2Date

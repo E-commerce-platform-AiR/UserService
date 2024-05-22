@@ -11,9 +11,9 @@ using UserService.Database.DbContext;
 
 namespace UserService.Migrations
 {
-    [DbContext(typeof(ShopDbContext))]
-    [Migration("20240514182012_init migration")]
-    partial class initmigration
+    [DbContext(typeof(UserDbContext))]
+    [Migration("20240522151820_Initial_migration")]
+    partial class Initial_migration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

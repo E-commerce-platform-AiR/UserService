@@ -8,9 +8,9 @@ namespace UserService.Database.Repositories;
 
 public class UserRepository : IUserRepository
 {
-    private readonly ShopDbContext _dbContext;
+    private readonly UserDbContext _dbContext;
 
-    public UserRepository(ShopDbContext dbContext)
+    public UserRepository(UserDbContext dbContext)
     {
         _dbContext = dbContext;
     }
@@ -51,7 +51,6 @@ public class UserRepository : IUserRepository
         {
             throw new UserAlreadyExistException();
         }
-        
         await _dbContext.Users.AddAsync(user);
     }
     public async Task SaveAsync()

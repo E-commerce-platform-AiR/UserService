@@ -31,9 +31,9 @@ public class Startup
 
     private void ConfigureDatabaseContext(IServiceCollection services)
     {
-        services.AddDbContext<ShopDbContext>(options =>
+        services.AddDbContext<UserDbContext>(options =>
         {
-            options.UseNpgsql(_configuration.GetConnectionString("ShopDbContext"));
+            options.UseNpgsql(_configuration.GetConnectionString("UserDbContext"));
         });
     }
 

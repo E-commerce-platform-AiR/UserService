@@ -4,9 +4,9 @@ using UserService.Database.Entities;
 
 namespace UserService.Database.DbContext;
 
-public class ShopDbContext : Microsoft.EntityFrameworkCore.DbContext
+public class UserDbContext : Microsoft.EntityFrameworkCore.DbContext
 {
-    public ShopDbContext(DbContextOptions<ShopDbContext> options) : base(options) { }
+    public UserDbContext(DbContextOptions<UserDbContext> options) : base(options) { }
     
     public DbSet<UserEntity> Users { get; set; } = null!;
     
