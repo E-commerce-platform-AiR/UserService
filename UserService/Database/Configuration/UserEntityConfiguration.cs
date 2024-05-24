@@ -30,5 +30,10 @@ public class UserEntityConfiguration : IEntityTypeConfiguration<UserEntity>
             .IsRequired()
             .HasMaxLength(255)
             .HasColumnName("email");
+
+        builder.Property(x => x.IsAdmin)
+            .HasColumnName("is_admin")
+            .IsRequired()
+            .HasDefaultValue(false);
     }
 }

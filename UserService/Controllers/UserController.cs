@@ -12,20 +12,11 @@ namespace UserService.Controllers;
 public class UserController : ControllerBase
 {
     private readonly IUserService _userService;
-    private readonly IUserRepository _userRepository;
 
-    public UserController(IUserService userService, IUserRepository userRepository)
+    public UserController(IUserService userService)
     {
         _userService = userService;
-        _userRepository = userRepository;
     }
-
-    [HttpGet("users")]
-    public async Task<ActionResult<List<UserEntity>>> GetUserList()
-    {
-        var users = await _userRepository.GetUserList();
-        return Ok(users);
-    }  
     
     [HttpPost("register")]
     public async Task<ActionResult<UserEntity>> PostUser([FromBody] User user)
