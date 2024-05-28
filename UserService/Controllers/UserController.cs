@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using UserService.Database.Entities;
-using UserService.Database.Repositories.Interfaces;
 using UserService.Models;
 using UserService.Models.Exceptions;
 using UserService.Services.Interfaces;
@@ -59,10 +58,29 @@ public class UserController : ControllerBase
             return StatusCode(500, ex.Message);
         }
     }
+    
+    [HttpGet("{userId:guid}")]
+    public async Task<ActionResult<UserResponse>> GetUserById(Guid userId)
+    {
+        try
+        {
+            return Ok(await _userService.GetUser(userId));
+        }
+        catch (UserNotFoundException ex)
+        {
+            return BadRequest(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, ex.Message);
+        }
+    }
 
     [HttpDelete("delete")]
     public async Task<ActionResult> DeleteUser([FromBody] int id)
     {
         return null; // TODO
     }
+    
+    
 }

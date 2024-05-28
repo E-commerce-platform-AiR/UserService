@@ -7,5 +7,5 @@ public interface IUserService
 {
     Task<UserEntity> PostUser(User user);
     Task<UserEntity> GetUser(string userName, string password);
-    Task<UserEntity> GetUser(Guid userId);
+    Task<UserResponse> GetUser(Guid userId);
 }

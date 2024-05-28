@@ -27,7 +27,7 @@ public class UserService : IUserService
         return await _userRepository.GetUser(userEmail, password);
     }
 
-    public async Task<UserEntity> GetUser(Guid userId)
+    public async Task<UserResponse> GetUser(Guid userId)
     {
         return await _userRepository.GetUser(userId);
     }
