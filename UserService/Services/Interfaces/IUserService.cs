@@ -8,4 +8,6 @@ public interface IUserService
     Task<UserEntity> PostUser(User user);
     Task<UserEntity> GetUser(string userName, string password);
     Task<UserResponse> GetUser(Guid userId);
+    Task DeleteUser(Guid userId);
+    Task<UserEntity> SetUserRole(Guid userId, bool isAdmin);
 }
