@@ -16,4 +16,20 @@ public class UserDbContext : Microsoft.EntityFrameworkCore.DbContext
 
         modelBuilder.ApplyConfiguration(new UserEntityConfiguration());
     }
+    public void Seed()
+    {
+        if (!Users.Any(u => u.Email == "admin@example.com"))
+        {
+            Users.Add(new UserEntity
+            {
+                Id = Guid.NewGuid(),
+                UserName = "admin",
+                Password = "admin_password", 
+                Email = "admin@agh.edu.pl",
+                IsAdmin = true
+            });
+
+            SaveChanges();
+        }
+    }
 }

@@ -51,7 +51,7 @@ public class Startup
         services.AddScoped<IUserService, Services.UserService>();
     }
     
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env, UserDbContext dbContext)
     {
         app.UseWebSockets();
         app.UseCors(policyBuilder =>
@@ -79,6 +79,9 @@ public class Startup
             endpoint.MapControllers();
             endpoint.MapRazorPages();
         });
+
+        dbContext.Seed();
+
     }
-    
+
 }

@@ -75,4 +75,57 @@ public class UserController : ControllerBase
             return StatusCode(500, ex.Message);
         }
     }
+
+    [HttpDelete("{userId:guid}")]
+    public async Task<ActionResult> DeleteUser(Guid userId)
+    {
+        try
+        {
+            await _userService.DeleteUser(userId);
+            return NoContent();
+        }
+        catch (UserNotFoundException ex)
+        {
+            return NotFound(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, ex.Message);
+        }
+    }
+    [HttpPatch("{userId:guid}/setAdmin")]
+    public async Task<ActionResult<UserEntity>> SetUserRoleToAdmin(Guid userId)
+    {
+        try
+        {
+            var user = await _userService.SetUserRole(userId, true);
+            return Ok(user);
+        }
+        catch (UserNotFoundException ex)
+        {
+            return NotFound(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, ex.Message);
+        }
+    }
+
+    [HttpPatch("{userId:guid}/removeAdmin")]
+    public async Task<ActionResult<UserEntity>> SetUserRoleToUser(Guid userId)
+    {
+        try
+        {
+            var user = await _userService.SetUserRole(userId, false);
+            return Ok(user);
+        }
+        catch (UserNotFoundException ex)
+        {
+            return NotFound(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, ex.Message);
+        }
+    }
 }
