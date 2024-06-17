@@ -144,3 +144,5 @@ C:\Users\koobie\source\repos\UserService\UserService\obj\Debug\net7.0\UserServic
 C:\Users\koobie\source\repos\UserService\UserService\obj\Debug\net7.0\UserService.genruntimeconfig.cache
 C:\Users\koobie\source\repos\UserService\UserService\obj\Debug\net7.0\ref\UserService.dll
 C:\Users\koobie\source\repos\UserService\UserService\obj\Debug\net7.0\UserServ.57764DC8.Up2Date
+C:\Users\konra\Documents\Rozproszone projekt\UserService\UserService\bin\Debug\net7.0\Refit.dll
+C:\Users\konra\Documents\Rozproszone projekt\UserService\UserService\bin\Debug\net7.0\Refit.HttpClientFactory.dll

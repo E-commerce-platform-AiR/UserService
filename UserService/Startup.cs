@@ -1,8 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using UserService.ApiReference;
 using UserService.Database.DbContext;
 using UserService.Database.Repositories;
 using UserService.Database.Repositories.Interfaces;
 using UserService.Services.Interfaces;
+using Refit;
 
 namespace UserService;
 
@@ -20,6 +22,22 @@ public class Startup
         ConfigureSwagger(services);
         ConfigureScopedServices(services);
         ConfigureDatabaseContext(services);
+        ConfigureApiReferences(services);
+    }
+    protected virtual void ConfigureApiReferences(IServiceCollection services)
+    {
+        var apiReferencesConfiguration = _configuration.GetSection("ApiReferences");
+        AddApiReference<IOfferApiReference>(services, apiReferencesConfiguration, "Offers");
+    }
+    
+    private static void AddApiReference<TApiReference>(IServiceCollection services,
+        IConfiguration apiReferencesConfiguration, string key)
+        where TApiReference : class
+    {
+        services
+            .AddRefitClient<TApiReference>()
+            .ConfigureHttpClient(client =>
+                client.BaseAddress = new Uri(apiReferencesConfiguration.GetValue<string>(key)!));
     }
     
     private static void ConfigureControllers(IServiceCollection services)
@@ -49,6 +67,7 @@ public class Startup
         services.AddRazorPages();
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IUserService, Services.UserService>();
+        services.AddScoped<IAdminService, Services.AdminService>();
     }
     
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env, UserDbContext dbContext)

@@ -21,8 +21,13 @@ public class UserRepository : IUserRepository
     }
     public async Task<UserEntity> GetUserEntity(Guid userId)
     {
-        return await _dbContext.Users
-            .FirstOrDefaultAsync(x => x.Id == userId);
+        UserEntity? userEntity = await _dbContext.Users.FirstOrDefaultAsync(x => x.Id == userId);
+        if (userEntity == null)
+        {
+            throw new UserNotFoundException();
+        }
+
+        return userEntity;
     }
     public async Task<UserResponse> GetUser(Guid userId)
     {
@@ -71,10 +76,9 @@ public class UserRepository : IUserRepository
 
         if (user == null)
         {
-            throw new UserNotFoundException("User not found.");
+            throw new UserNotFoundException();
         }
 
         _dbContext.Users.Remove(user);
-        await SaveAsync();
     }
 }
