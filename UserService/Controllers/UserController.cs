@@ -75,12 +75,4 @@ public class UserController : ControllerBase
             return StatusCode(500, ex.Message);
         }
     }
-
-    [HttpDelete("delete")]
-    public async Task<ActionResult> DeleteUser([FromBody] int id)
-    {
-        return null; // TODO
-    }
-    
-    
 }
