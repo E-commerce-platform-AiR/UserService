@@ -10,25 +10,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76b86ce2-176b-471a-9e3f-28a9a8244d6d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Models/Exceptions/UserIsNotAdminException.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../UserService.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UserService/.idea/dataSources/d2ef2cf1-4b47-46f7-b4f3-a6c9ddd7443e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UserService/.idea/dataSources/d2ef2cf1-4b47-46f7-b4f3-a6c9ddd7443e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UserService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UserService/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AdminController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/DbContext/DbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Database/DbContext/DbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/Repositories/Interfaces/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Database/Repositories/Interfaces/IUserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Database/Repositories/UserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/UserResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/UserResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/AdminService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/AdminService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Interfaces/IAdminService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Interfaces/IAdminService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/UserService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/UserService.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/UserService.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/UserService.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/UserService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/UserService.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/UserService.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/UserService.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/UserService.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/UserService.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/UserService.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/UserService.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/UserService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/UserService.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/UserService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/UserService.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/UserService.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/UserService.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/UserService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/UserService.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/refint/UserService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/UserService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/UserService.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/UserService.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../global.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,10 +44,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/konra/Documents/Rozproszone projekt/UserService/UserService/Controllers/UserController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/konra/Documents/Rozproszone projekt/UserService/UserService/Controllers/UserController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/konra/Documents/Rozproszone projekt/UserService/UserService/obj/Debug/net7.0/UserService.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/konra/Documents/Rozproszone projekt/UserService/UserService/obj/Debug/net7.0/UserService.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
@@ -56,6 +67,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "develop",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,8 +80,8 @@
       "postgresql"
     ],
     "rider.external.source.directories": [
-      "C:\\Users\\konra\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\konra\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\konra\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\konra\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
       "C:\\Users\\konra\\AppData\\Local\\Symbols\\src"
     ]
   }
@@ -131,6 +143,7 @@
       <updated>1716390144313</updated>
       <workItem from="1716390145340" duration="14051000" />
       <workItem from="1716829402233" duration="1993000" />
+      <workItem from="1718639683626" duration="14930000" />
     </task>
     <servers />
   </component>

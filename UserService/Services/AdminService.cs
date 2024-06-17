@@ -1,6 +1,7 @@
 ﻿using UserService.ApiReference;
 using UserService.Database.Entities;
 using UserService.Database.Repositories.Interfaces;
+using UserService.Models;
 using UserService.Models.Exceptions;
 using UserService.Services.Interfaces;
 
@@ -47,5 +48,32 @@ public class AdminService : IAdminService
     {
         var userEntity = await _userRepository.GetUser(userId);
         return await _offerApiReference.DeleteOffer(userEntity.Id, offerId);
+    }
+
+    public async Task<List<UserResponse>> GetAllUsers(Guid userId)
+    {
+        var user = await _userRepository.GetUserEntity(userId);
+        List<UserEntity> userEntities;
+
+        if (user.IsAdmin)
+        {
+            userEntities = await _userRepository.GetUsersList();
+            userEntities = userEntities.Where(x => x.Id != userId).ToList();
+
+        }
+        else
+        {
+            throw new UserIsNotAdminException();
+        }
+
+        List<UserResponse> userResponses = new List<UserResponse>();
+
+        foreach (var userEntity in userEntities)
+        {
+            UserResponse userResponse = new(userEntity);
+            userResponses.Add(userResponse);
+        }
+
+        return userResponses;
     }
 }

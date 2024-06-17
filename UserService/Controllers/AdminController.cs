@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using UserService.Database.Entities;
+using UserService.Models;
 using UserService.Models.Exceptions;
 using UserService.Services.Interfaces;
 
@@ -18,7 +19,24 @@ public class AdminController  : ControllerBase
         _adminService = adminService;
     }
     
-    [HttpDelete("{offerId:long}")]
+    [HttpGet("/getAllUsers")]
+    public async Task<ActionResult<List<UserResponse>>> GetAllUsers(Guid userId)
+    {
+        try
+        {
+            return Ok(await _adminService.GetAllUsers(userId));
+        }
+        catch (UserNotFoundException ex)
+        {
+            return NotFound(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, ex.Message);
+        }
+    }
+    
+    [HttpDelete("{offerId:long}/deleteOffer")]
     public async Task<ActionResult<bool>> DeleteOffer(Guid userId, long offerId)
     {
         try
@@ -31,13 +49,12 @@ public class AdminController  : ControllerBase
         }
     }
     
-    [HttpDelete("")]
+    [HttpDelete("deleteUser")]
     public async Task<ActionResult> DeleteUser(Guid userId)
     {
         try
         {
-            await _adminService.DeleteUser(userId);
-            return NoContent();
+            return Ok(await _adminService.DeleteUser(userId));
         }
         catch (UserNotFoundException ex)
         {
@@ -54,8 +71,7 @@ public class AdminController  : ControllerBase
     {
         try
         {
-            var user = await _adminService.SetUserRole(userId, true);
-            return Ok(user);
+            return Ok(await _adminService.SetUserRole(userId, true));
         }
         catch (UserNotFoundException ex)
         {
@@ -72,8 +88,7 @@ public class AdminController  : ControllerBase
     {
         try
         {
-            var user = await _adminService.SetUserRole(userId, false);
-            return Ok(user);
+            return Ok(await _adminService.SetUserRole(userId, false));
         }
         catch (UserNotFoundException ex)
         {

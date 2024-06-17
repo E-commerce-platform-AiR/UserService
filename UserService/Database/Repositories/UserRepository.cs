@@ -15,7 +15,7 @@ public class UserRepository : IUserRepository
     {
         _dbContext = dbContext;
     }
-    public async Task<List<UserEntity>> GetUserList()
+    public async Task<List<UserEntity>> GetUsersList()
     {
         return await _dbContext.Users.ToListAsync();
     }
@@ -29,6 +29,7 @@ public class UserRepository : IUserRepository
 
         return userEntity;
     }
+    
     public async Task<UserResponse> GetUser(Guid userId)
     {
         UserEntity? userEntity = await _dbContext.Users

@@ -24,8 +24,8 @@ public class UserDbContext : Microsoft.EntityFrameworkCore.DbContext
             {
                 Id = Guid.NewGuid(),
                 UserName = "admin",
-                Password = "admin_password", 
-                Email = "admin@agh.edu.pl",
+                Password = "admin", 
+                Email = "admin@example.com",
                 IsAdmin = true
             });
 
